@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ListController.searchResults(word:):ListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bookResult">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListController.tableView(_:numberOfRowsInSection:):ListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bookDataSource.boughtBooks.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PresentationController.viewDidLoad():PresentationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navigationController.navigationBar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PresentationController.viewControllerAtIndex(index:):PresentationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.book">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListController.tableView(_:cellForRowAt:):ListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bookDataSource.boughtBooks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PresentationContentController.viewDidLoad():PresentationContentController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "htmlString.htmlToAttributedString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BoughtBooks.searchBoughtBooksByName(_:):BookResources.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "name">
+            </PersistentString>
+            <PersistentString
+               value = "book.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

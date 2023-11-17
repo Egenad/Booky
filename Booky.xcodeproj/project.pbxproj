@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB3A1CD22B04BC9D00BEA4F9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A1CD12B04BC9C00BEA4F9 /* TableViewCell.swift */; };
+		CB3A1CD72B05105B00BEA4F9 /* PresentationContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A1CD62B05105B00BEA4F9 /* PresentationContentController.swift */; };
+		CB3A1CD92B0608B200BEA4F9 /* PageResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A1CD82B0608B200BEA4F9 /* PageResources.swift */; };
+		CB3A1CDB2B06464B00BEA4F9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A1CDA2B06464B00BEA4F9 /* Extensions.swift */; };
 		CB6E432E2B02B64F00334528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E432D2B02B64F00334528 /* AppDelegate.swift */; };
 		CB6E43302B02B64F00334528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E432F2B02B64F00334528 /* SceneDelegate.swift */; };
-		CB6E43322B02B64F00334528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E43312B02B64F00334528 /* ViewController.swift */; };
 		CB6E43352B02B64F00334528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E43332B02B64F00334528 /* Main.storyboard */; };
 		CB6E43372B02B65100334528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6E43362B02B65100334528 /* Assets.xcassets */; };
 		CB6E433A2B02B65100334528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB6E43382B02B65100334528 /* LaunchScreen.storyboard */; };
+		CB6E43422B02BA6500334528 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E43412B02BA6500334528 /* PresentationController.swift */; };
+		CB6E43442B02C5A700334528 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E43432B02C5A700334528 /* MainController.swift */; };
+		CB6E43482B02C68C00334528 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E43472B02C68C00334528 /* CollectionViewController.swift */; };
+		CB6E434A2B02CB2700334528 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E43492B02CB2700334528 /* ListController.swift */; };
+		CB6E434C2B02CB7900334528 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E434B2B02CB7900334528 /* Throttler.swift */; };
+		CBDC62032B03EFB3004C4896 /* BookResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC62022B03EFB3004C4896 /* BookResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB3A1CD12B04BC9C00BEA4F9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CB3A1CD62B05105B00BEA4F9 /* PresentationContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContentController.swift; sourceTree = "<group>"; };
+		CB3A1CD82B0608B200BEA4F9 /* PageResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageResources.swift; sourceTree = "<group>"; };
+		CB3A1CDA2B06464B00BEA4F9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CB6E432A2B02B64F00334528 /* Booky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6E432D2B02B64F00334528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB6E432F2B02B64F00334528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB6E43312B02B64F00334528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB6E43342B02B64F00334528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB6E43362B02B65100334528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB6E43392B02B65100334528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB6E433B2B02B65100334528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB6E43412B02BA6500334528 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		CB6E43432B02C5A700334528 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		CB6E43472B02C68C00334528 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		CB6E43492B02CB2700334528 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		CB6E434B2B02CB7900334528 /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		CBDC62022B03EFB3004C4896 /* BookResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB3A1CD32B04BCB300BEA4F9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CBDC62022B03EFB3004C4896 /* BookResources.swift */,
+				CB6E434B2B02CB7900334528 /* Throttler.swift */,
+				CB3A1CD82B0608B200BEA4F9 /* PageResources.swift */,
+				CB3A1CDA2B06464B00BEA4F9 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		CB6E43212B02B64F00334528 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +85,19 @@
 		CB6E432C2B02B64F00334528 /* Booky */ = {
 			isa = PBXGroup;
 			children = (
+				CB3A1CD32B04BCB300BEA4F9 /* Utils */,
 				CB6E432D2B02B64F00334528 /* AppDelegate.swift */,
 				CB6E432F2B02B64F00334528 /* SceneDelegate.swift */,
-				CB6E43312B02B64F00334528 /* ViewController.swift */,
+				CB6E43432B02C5A700334528 /* MainController.swift */,
+				CB6E43412B02BA6500334528 /* PresentationController.swift */,
+				CB3A1CD62B05105B00BEA4F9 /* PresentationContentController.swift */,
+				CB6E43472B02C68C00334528 /* CollectionViewController.swift */,
 				CB6E43332B02B64F00334528 /* Main.storyboard */,
 				CB6E43362B02B65100334528 /* Assets.xcassets */,
 				CB6E43382B02B65100334528 /* LaunchScreen.storyboard */,
 				CB6E433B2B02B65100334528 /* Info.plist */,
+				CB6E43492B02CB2700334528 /* ListController.swift */,
+				CB3A1CD12B04BC9C00BEA4F9 /* TableViewCell.swift */,
 			);
 			path = Booky;
 			sourceTree = "<group>";
@@ -138,9 +173,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB6E43322B02B64F00334528 /* ViewController.swift in Sources */,
 				CB6E432E2B02B64F00334528 /* AppDelegate.swift in Sources */,
+				CB6E434C2B02CB7900334528 /* Throttler.swift in Sources */,
 				CB6E43302B02B64F00334528 /* SceneDelegate.swift in Sources */,
+				CBDC62032B03EFB3004C4896 /* BookResources.swift in Sources */,
+				CB3A1CD22B04BC9D00BEA4F9 /* TableViewCell.swift in Sources */,
+				CB6E43482B02C68C00334528 /* CollectionViewController.swift in Sources */,
+				CB3A1CD92B0608B200BEA4F9 /* PageResources.swift in Sources */,
+				CB3A1CDB2B06464B00BEA4F9 /* Extensions.swift in Sources */,
+				CB6E43422B02BA6500334528 /* PresentationController.swift in Sources */,
+				CB6E43442B02C5A700334528 /* MainController.swift in Sources */,
+				CB6E434A2B02CB2700334528 /* ListController.swift in Sources */,
+				CB3A1CD72B05105B00BEA4F9 /* PresentationContentController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
