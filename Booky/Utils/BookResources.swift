@@ -19,30 +19,20 @@ class Comment {
     var stars : Stars = .noStar
 }
 
-class Page{
-    var content : String = ""
-    
-    init(){}
-    
-    init(_ content : String){
-        self.content = content
-    }
-}
-
 class Book{
     var name : String = ""
     var author: String = ""
     var synopsis : String = ""
     var portrait : String = ""
     var comments = Array<Comment>()
-    var pages = Array<Page>()
+    var pages = Array<String>()
     var stars : Int = 0
     
     init(){
         
     }
     
-    init(name : String, author : String, synopsis : String, portrait : String, comments : Array<Comment>, pages : Array<Page>){
+    init(name : String, author : String, synopsis : String, portrait : String, comments : Array<Comment>, pages : Array<String>){
         self.name = name
         self.author = author
         self.synopsis = synopsis
@@ -58,7 +48,7 @@ final class BookSourceData{
     
     private init(){
         
-        var b_pages = [Page(hp1_0), Page(hp1_1), Page(hp1_2), Page(hp1_3)]
+        var b_pages = [hp1_0, hp1_1, hp1_2, hp1_3]
         
         var b = Book(
             name: "Harry Potter and the Sorcerer's Stone",
@@ -71,13 +61,15 @@ final class BookSourceData{
         
         allBooks.append(b)
         
+        b_pages = [hp2_0, hp2_1, hp2_2, hp2_3]
+        
         b = Book(
             name: "Harry Potter and the Chamber of Secrets",
             author: "J. K. Rowling",
             synopsis: "\"Harry Potter and the Chamber of Secrets,\" the second volume of the already classic series of fantasy novels by British author J.K. Rowling.\n \"There is a plot, Harry Potter. A plot to make the most terrible things happen this year at Hogwarts School of Witchcraft and Wizardry.\"\n Harry Potter's summer has included the worst birthday of his life, ominous warnings from a house-elf named Dobby, and a rescue from the Dursleys' house by his friend Ron Weasley driving a magical flying car. Back at Hogwarts School of Witchcraft and Wizardry, where he is starting his second year, Harry hears strange whispers echoing through the empty corridors. And then the attacks begin, and several students are found petrified. It seems that Dobby's sinister predictions are coming true.",
             portrait: "hp2",
             comments: Array(),
-            pages: Array()
+            pages: b_pages
         )
         
         allBooks.append(b)

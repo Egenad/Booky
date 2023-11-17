@@ -20,8 +20,7 @@ class PresentationController: UIViewController, UIPageViewControllerDataSource, 
         
         changeTabBarColors(UIColor.white, UIColor.black)
         
-        let addButton = UIBarButtonItem(image: UIImage(systemName: "sun.min.fill"), style: .plain, target: self, action: #selector(changeMainTheme))
-        navigationItem.rightBarButtonItem = addButton
+        setNavigationLayout()
 
         self.pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as! UIPageViewController?
         self.pageViewController?.dataSource = self
@@ -35,6 +34,22 @@ class PresentationController: UIViewController, UIPageViewControllerDataSource, 
         self.addChild(self.pageViewController!)
         self.view.addSubview((self.pageViewController?.view)!)
         self.pageViewController?.didMove(toParent: self)
+    }
+    
+    func setNavigationLayout(){
+        
+        // Day/Night mode button
+        let newButton = UIBarButtonItem(image: UIImage(systemName: "sun.min.fill"), style: .plain, target: self, action: #selector(changeMainTheme))
+        navigationItem.rightBarButtonItem = newButton
+        
+        // Title
+        let titleLabel = UILabel()
+        titleLabel.text = book?.name
+        titleLabel.textColor = darkTheme ? UIColor.white : UIColor.black
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
+
+        navigationItem.titleView = titleLabel
+        titleLabel.sizeToFit()
     }
     
     @objc func changeMainTheme() {
@@ -79,8 +94,21 @@ class PresentationController: UIViewController, UIPageViewControllerDataSource, 
         
         if let navigationController = self.navigationController {
             navigationController.navigationBar.tintColor = itemColor
+            
             navigationController.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+            
+            let label = navigationController.navigationBar.topItem?.titleView as? UILabel
+            label?.textColor = itemColor
+            
             navigationController.navigationBar.barTintColor = backgroundColor
+            
+            var image = UIImage(systemName: "sun.min.fill")
+            
+            if(itemColor != UIColor.white){
+                image = UIImage(systemName: "moon.fill")
+            }
+            
+            navigationItem.rightBarButtonItem?.image = image
         }
     }
 
@@ -93,7 +121,7 @@ class PresentationController: UIViewController, UIPageViewControllerDataSource, 
         
         pcc.pageIndex = index
         pcc.totalPages = self.book?.pages.count ?? 0
-        pcc.contentString = self.book?.pages[index].content ?? ""
+        pcc.contentString = self.book?.pages[index] ?? ""
         pcc.darkTheme = darkTheme
         
         return pcc
