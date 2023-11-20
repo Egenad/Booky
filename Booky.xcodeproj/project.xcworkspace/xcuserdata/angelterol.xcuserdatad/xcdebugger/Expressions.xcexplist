@@ -3,10 +3,10 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ListController.tableView(_:cellForRowAt:):ListController.swift">
+         contextName = "ListController.searchResults(word:):ListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "bookDataSource.boughtBooks">
+               value = "bookResult">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -46,10 +46,13 @@
          contextName = "main:AppDelegate.swift">
       </ContextState>
       <ContextState
-         contextName = "ListController.searchResults(word:):ListController.swift">
+         contextName = "ListController.tableView(_:cellForRowAt:):ListController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "bookResult">
+               value = "bookDataSource.boughtBooks">
+            </PersistentString>
+            <PersistentString
+               value = " UIImage(named:bookResult[indexPath.row].portrait)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -77,6 +80,14 @@
             </PersistentString>
             <PersistentString
                value = "book.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CollectionViewController.searchResults(word:):CollectionViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bookResult">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

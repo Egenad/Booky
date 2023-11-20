@@ -7,20 +7,27 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-let COLLECTION_CELL_ID = "collectionCell"
+private let COLLECTION_CELL_ID = "collectionCell"
 
 class CollectionViewController: UICollectionViewController, UISearchResultsUpdating {
-
-    @IBOutlet weak var cellImage: UIImageView!
+    
+    @IBOutlet var cView: UICollectionView!
     
     var searchController : UISearchController!
     
     let throttler   = Throttler(minimumDelay: 0.5)
     var spinner     = UIActivityIndicatorView()
     
+    let bookDataSource = BookSourceData.instance
+    
+    var bookResult = [Book]()
+    
+    var lastSearch = "init"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateColors()
 
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
@@ -34,33 +41,69 @@ class CollectionViewController: UICollectionViewController, UISearchResultsUpdat
         spinner.center.y = self.view.center.y
         self.view.bringSubviewToFront(self.spinner)
         
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        bookResult = bookDataSource.allBooks
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
-        // Do any additional setup after loading the view.
+        updateColors()
+    }
+    
+    private func updateColors(){
+        if let tabBarController = self.tabBarController {
+            tabBarController.tabBar.barTintColor = UIColor.white
+            
+            if let tabBarItems = tabBarController.tabBar.items {
+                for tabBarItem in tabBarItems {
+                    tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.lightGray], for: .normal)
+                }
+            }
+            
+            if let selectedTabBarItem = tabBarController.tabBar.selectedItem {
+                selectedTabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
+            }
+        }
     }
     
     func updateSearchResults(for searchController: UISearchController) {
         throttler.throttle {
-            
+            let newText = searchController.searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            print(newText)
+            self.searchResults(word: newText)
         }
     }
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    
+    func searchResults(word : String){
+        
+        if(!word.elementsEqual(lastSearch)){
+            if(!word.isEmpty){
+                bookResult = bookDataSource.searchAllBooksByName(word)
+            }else{
+                bookResult = bookDataSource.allBooks
+            }
+        }
+        
+        self.cView.reloadData()
+        self.lastSearch = word
     }
-
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return bookResult.count
+    }
+    
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: COLLECTION_CELL_ID, for: indexPath) as! CollectionViewCell
     
-        // Configure the cell
-    
+        cell.collectionView?.image = UIImage(named: bookResult[indexPath.row].portrait)
+        cell.collectionAuthor.text = bookResult[indexPath.row].author
+        cell.collectionTitle.text = bookResult[indexPath.row].name
+        
         return cell
+        
     }
 }

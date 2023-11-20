@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB1AE7D82B08B84A00083B80 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1AE7D72B08B84A00083B80 /* CollectionViewCell.swift */; };
 		CB3A1CD22B04BC9D00BEA4F9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A1CD12B04BC9C00BEA4F9 /* TableViewCell.swift */; };
 		CB3A1CD72B05105B00BEA4F9 /* PresentationContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A1CD62B05105B00BEA4F9 /* PresentationContentController.swift */; };
 		CB3A1CD92B0608B200BEA4F9 /* PageResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A1CD82B0608B200BEA4F9 /* PageResources.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB1AE7D72B08B84A00083B80 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CB3A1CD12B04BC9C00BEA4F9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CB3A1CD62B05105B00BEA4F9 /* PresentationContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationContentController.swift; sourceTree = "<group>"; };
 		CB3A1CD82B0608B200BEA4F9 /* PageResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageResources.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				CB6E433B2B02B65100334528 /* Info.plist */,
 				CB6E43492B02CB2700334528 /* ListController.swift */,
 				CB3A1CD12B04BC9C00BEA4F9 /* TableViewCell.swift */,
+				CB1AE7D72B08B84A00083B80 /* CollectionViewCell.swift */,
 			);
 			path = Booky;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				CB6E43482B02C68C00334528 /* CollectionViewController.swift in Sources */,
 				CB3A1CD92B0608B200BEA4F9 /* PageResources.swift in Sources */,
 				CB3A1CDB2B06464B00BEA4F9 /* Extensions.swift in Sources */,
+				CB1AE7D82B08B84A00083B80 /* CollectionViewCell.swift in Sources */,
 				CB6E43422B02BA6500334528 /* PresentationController.swift in Sources */,
 				CB6E43442B02C5A700334528 /* MainController.swift in Sources */,
 				CB6E434A2B02CB2700334528 /* ListController.swift in Sources */,

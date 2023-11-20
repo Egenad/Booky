@@ -14,6 +14,19 @@ enum Stars : Int{
     case fiveStar
 }
 
+enum Genre : String{
+    case Fantasy
+    case Historical_Fiction
+    case Mystery
+    case Romance
+    case SciFi
+}
+
+enum Language : String{
+    case English
+    case Spanish
+}
+
 class Comment {
     var content : String? = nil
     var stars : Stars = .noStar
@@ -128,6 +141,150 @@ final class BookSourceData{
         )
         
         allBooks.append(b)
+        
+        b = Book(
+            name: "Tress of the Emerald Sea",
+            author: "Brandon Sanderson",
+            synopsis: "In her native island over an emerald green ocean, the only life Braids knows is simple, marked by the pleasure of collecting mugs brought by sailors from distant lands and listening to the stories told by her friend Charlie. But when Charlie's father takes him on a ship to find him a wife and a disaster occurs, Braids must sneak aboard as a stowaway on a ship and set sail in search of the sorceress who dwells in the deadly Midnight Sea. Over oceans of spores teeming with pirates, can Braids leave her peaceful life behind and carve a place for herself in an ocean where a single drop can mean instant death?",
+            portrait: "bs_tes",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "The Frugal Wizard's Handbook for Surviving Medieval England",
+            author: "Brandon Sanderson",
+            synopsis: "A man awakens in a clearing in a forest that appears to be medieval England, with no memory of who he is, where he comes from, or why he is there. Pursued by a group from his own time, his only chance of survival lies in recovering his lost memory, gaining allies among the local people, and perhaps even relying on their superstitious beliefs. His only aid from the \"real world\" should have been a manual titled \"The Frugal Wizard's Guide to Surviving Medieval England,\" but the copy he had exploded in transit. The few fragments he managed to rescue provide clues about his situation, but will he be able to connect the dots in time to survive?",
+            portrait: "bs_tfwh",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "Yumi and the Nightmare Painter",
+            author: "Brandon Sanderson",
+            synopsis: "Yumi comes from a land of gardens, meditation, and spirits, while Pintor lives in a world of darkness, technology, and nightmares. When suddenly their lives become strangely intertwined, can they set aside their differences and collaborate to uncover the mysteries of their situation and save their respective communities from certain disaster?",
+            portrait: "bs_yatnp",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "The Sunlit Man",
+            author: "Brandon Sanderson",
+            synopsis: "Years ago he had comrades in arms and a cause to believe in, but now the man who calls himself Nomad knows only a life on the run. Forced to hop from world to world in the C osmere whenever the relentless Night Brigade gets too close, Nomad lands on a new planet and is instantly caught up in the struggle between a tyrant and the rebels who want only to escape being turned into mindless slaves-all under the constant threat of a sunrise whose heat will melt the very stones. Unable to understand the language, can he navigate the conflict and gain enough power to leap offworld before his mind or body pay the ultimate price?",
+            portrait: "bs_sm",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "Alas de Fuego",
+            author: "Laura Gallego",
+            synopsis: "The young queen Marla is the sovereign of a radiant nation. Ahriel, a female angel, has been by her side since birth, with the mission to protect and guide her, and to maintain balance among the human realms. However, when Ahriel uncovers a conspiracy to initiate a bloody war, she is betrayed and imprisoned with her wings rendered useless in the horrifying Gorlian prison—a primitive and brutal world from which no one has ever escaped. Ahriel must not only learn to survive in Gorlian but also to see things from the human perspective... from ground level.",
+            portrait: "lg_af",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "Alas Negras",
+            author: "Laura Gallego",
+            synopsis: "The female angel Ahriel has regained her freedom and achieved her revenge, but there is still something she must do. After going to account to her peers in the City of Clouds, she is set to resume the search for the magical prison of Gorlian to retrieve what she left behind when she escaped. She is determined to do whatever it takes to find it, even interrogate the only person who knows where it is hidden. Getting to her won't be easy, but Ahriel won't be alone this time...",
+            portrait: "lg_an",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "El Libro de los Portales",
+            author: "Laura Gallego",
+            synopsis: "The painters of the Academy of Portals are the only ones who know how to draw the extraordinary travel portals that constitute Darusia's most important communication and transportation network. Their strict rules and thorough training ensure impeccable professionalism and technical perfection in all their work. When Tabit, a final-year student at the Academy, is tasked with painting a portal for a humble peasant, he does not imagine that he is about to become entangled in a plot of intrigues and secrets that could shake the very foundations of the institution.",
+            portrait: "lg_eldlp",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "The Physician",
+            author: "Noah Gordon",
+            synopsis: "England, 11th century. At the age of nine, after the death of his mother and the loss of his home, Rob J. Cole realizes he has an extraordinary gift: by touching a person, he can determine whether they are near death or not. Under the guidance of Henry Croft, a barber surgeon who travels the country practicing as a healer, his gift grows, along with his passion for medicine.After his mentor's death, Rob continues the business, but an encounter with Benjamin Merlin, a Jewish physician who speaks to him about the eminent doctor from distant Persia, Ibn Sina or Avicenna, inspires him to pursue his dream. Driven by his passion for healing and determined to overcome any obstacle, Rob will travel to the East, posing as a Jew and immersing himself in new languages, ready to study medicine at the madrasa of Isfahan. There, he will shape his destiny and that of his family forever.",
+            portrait: "ng_tp",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "Fourth Wing",
+            author: "Rebecca Yarros",
+            synopsis: "Violet Sorrengail believed she would join the Scribe Quadrant to live a peaceful life. However, by her mother's orders, she must join the thousands of candidates at the Basgiath War College who vie for a spot in Navarre's elite: the Dragon Rider Quadrant. Being smaller and frailer than the others puts her life in danger because dragons don't bond with weak humans. Additionally, with more riders than dragons available, many would kill her to improve their chances of success. There are others, like the ruthless Xaden Riorson, the most powerful wing leader in the Dragon Rider Quadrant, who would murder her simply for being the daughter of the general commander. To survive, she'll need to make the most of her wit. As the war becomes deadlier, Violet suspects that Navarre's leaders are hiding a terrible secret...",
+            portrait: "ry_fw",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "The Fault In Our Stars",
+            author: "John Green",
+            synopsis: "Emotional, ironic, and sharp. A novel tinted with humor and tragedy that speaks to our ability to dream even in the most challenging circumstances. Hazel and Gus would like to have more ordinary lives. Some would say they weren't born under a lucky star, that their world is unfair. Hazel and Gus are just teenagers, but if cancer has taught them anything, it's that there's no time for regrets because, like it or not, there is only today and now. And so, with the intention of fulfilling Hazel's greatest wish—to meet her favorite author—they will cross the Atlantic together to live a race against time, as cathartic as it is heartbreaking. Destination: Amsterdam, the place where the enigmatic and grumpy writer resides, the only person who might help them put together the pieces of the enormous puzzle they are a part of.",
+            portrait: "jg_tfios",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "The Sherlock Holmes: El Sabueso de los Baskerville",
+            author: "Arthur Conan Doyle",
+            synopsis: "1889, Devonshire, northwest England. Sir Charles Baskerville's corpse is discovered on a path near his house. When Sherlock Holmes is called in to solve the mystery, he observes that what seemed like a simple crime hides a curse that dates back centuries: since the ancestor of Sir Charles, Hugo de Baskerville, was killed by a giant hound, the death of his descendants has been preceded by the appearance of a demonic dog. Indeed, the tracks of an enormous creature appear next to Sir Charles's body. What lies behind the legend of the Baskervilles?",
+            portrait: "acd_sh_sb",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+        
+        b = Book(
+            name: "The Sherlock Holmes: Estudio en Escarlata",
+            author: "Arthur Conan Doyle",
+            synopsis: "Retired military surgeon John Watson returns to London in search of a quiet place to enjoy his retirement. However, his journey leads him to 221B Baker Street, where he meets Sherlock Holmes, an eccentric character who will become the most famous detective of all time. With Holmes, Watson becomes entangled in the investigation of a mysterious murder. The corpse of a man has appeared in an empty house. Although the body shows no apparent wounds, an enigmatic message can be read on the wall of the room next to it: \"Rache.\"",
+            portrait: "acd_sh_es",
+            comments: Array(),
+            pages: Array()
+        )
+        
+        allBooks.append(b)
+    }
+    
+    func searchAllBooksByName(_ name: String) -> Array<Book>{
+        var toReturn = Array<Book>()
+        
+        for book in allBooks{
+            if(book.name.lowercased().contains(name.lowercased())){
+                toReturn.append(book)
+            }
+        }
+        
+        return toReturn
     }
     
     func findBookByName(_ name : String) -> Book?{
@@ -165,7 +322,7 @@ final class BoughtBooks{
         var toReturn = Array<Book>()
         
         for book in boughtBooks{
-            if(book.name.contains(name)){
+            if(book.name.lowercased().contains(name.lowercased())){
                 toReturn.append(book)
             }
         }
