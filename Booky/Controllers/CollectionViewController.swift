@@ -106,4 +106,16 @@ class CollectionViewController: UICollectionViewController, UISearchResultsUpdat
         return cell
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dc = segue.destination as? DetailViewController {
+            var index : Int = 0
+            
+            if let indexPaths = collectionView.indexPathsForSelectedItems, let selectedIndexPath = indexPaths.first {
+                index = selectedIndexPath.item
+            }
+            
+            dc.book = bookResult[index]
+        }
+    }
 }
