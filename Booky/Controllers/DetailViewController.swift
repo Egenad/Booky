@@ -21,6 +21,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var sinopsis: UITextView!
     
+    @IBOutlet weak var mainStack: UIStackView!
+    
     var book : Book? = nil
     
     var boughtBooks = BoughtBooks.instance
@@ -28,7 +30,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if(book != nil){
+        /*if(book != nil){
             portrait.image = UIImage(named: book?.portrait ?? "hp1")
             bookAuthor.text = book?.author
             bookTitle.text = book?.name
@@ -43,7 +45,7 @@ class DetailViewController: UIViewController {
             
             sinopsis.text = book?.synopsis
         }
-        
+        */
         if let navigationController = self.navigationController {
             navigationController.navigationBar.tintColor = UIColor.black
             
@@ -62,6 +64,16 @@ class DetailViewController: UIViewController {
             }
         }
     }
+    
+    override func viewWillLayoutSubviews() {
+        if view.bounds.size.width >= view.bounds.size.height {
+            self.mainStack.axis = .horizontal
+        }
+        else {
+            self.mainStack.axis = .vertical
+        }
+    }
+
     
 
     @IBAction func buyBook(_ sender: Any) {
