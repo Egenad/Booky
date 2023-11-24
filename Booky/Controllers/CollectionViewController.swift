@@ -32,7 +32,7 @@ class CollectionViewController: UICollectionViewController, UISearchResultsUpdat
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search book name"
+        searchController.searchBar.placeholder = NSLocalizedString("search", comment: "")
         self.navigationItem.searchController = searchController
         
         spinner.hidesWhenStopped = true

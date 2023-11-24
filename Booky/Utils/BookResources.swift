@@ -5,6 +5,8 @@
 //  Created by Angel Terol on 14/11/23.
 //
 
+import UIKit
+
 enum Stars : Int{
     case noStar
     case oneStar
@@ -55,9 +57,9 @@ final class BookSourceData{
         var b_pages = [hp1_0, hp1_1, hp1_2, hp1_3]
         
         var b = Book(
-            name: "Harry Potter and the Sorcerer's Stone",
+            name: NSLocalizedString("hp1_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: "\"With trembling hands, Harry turned the envelope over and saw a purple wax seal with a coat of arms: a lion, an eagle, a badger, and a snake, surrounding a large letter H.\"\n Harry Potter had never heard of Hogwarts until letters began to fall through the mail slot of number 4 Privet Drive. They had the address written in green ink on a yellowish parchment envelope sealed with a purple wax seal, and his dreadful aunt and uncle hurried to confiscate them. Later, on the day Harry turns eleven, Rubeus Hagrid, a gigantic man whose eyes gleam like black beetles, bursts in with extraordinary news: Harry Potter is a wizard, and he has been granted a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!",
+            synopsis: NSLocalizedString("hp1_2", comment: ""),
             portrait: "hp1",
             pages: b_pages,
             genre: .Fantasy,
@@ -69,9 +71,9 @@ final class BookSourceData{
         b_pages = [hp2_0, hp2_1, hp2_2, hp2_3]
         
         b = Book(
-            name: "Harry Potter and the Chamber of Secrets",
+            name: NSLocalizedString("hp2_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: "\"Harry Potter and the Chamber of Secrets,\" the second volume of the already classic series of fantasy novels by British author J.K. Rowling.\n \"There is a plot, Harry Potter. A plot to make the most terrible things happen this year at Hogwarts School of Witchcraft and Wizardry.\"\n Harry Potter's summer has included the worst birthday of his life, ominous warnings from a house-elf named Dobby, and a rescue from the Dursleys' house by his friend Ron Weasley driving a magical flying car. Back at Hogwarts School of Witchcraft and Wizardry, where he is starting his second year, Harry hears strange whispers echoing through the empty corridors. And then the attacks begin, and several students are found petrified. It seems that Dobby's sinister predictions are coming true.",
+            synopsis: NSLocalizedString("hp2_s", comment: ""),
             portrait: "hp2",
             pages: b_pages,
             genre: .Fantasy,
@@ -81,9 +83,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Harry Potter and the Prisoner of Azkaban",
+            name: NSLocalizedString("hp3_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: "\"Welcome to the Knight Bus, emergency transport for the stranded wizard. Raise your wand, hop on board, and we'll take you wherever you want to go.\"\n When the Knight Bus bursts onto a dark street and screeches to a halt in front of Harry, a new school year at Hogwarts begins for him, full of extraordinary events. Sirius Black, a murderer and follower of Lord Voldemort, has escaped, and it is said he is after Harry. In his first Divination class, Professor Trelawney sees a death omen in the tea leaves of Harry's cup... But perhaps the most terrifying are the Dementors patrolling the school grounds, capable of sucking out your soul with their kiss...",
+            synopsis: NSLocalizedString("hp3_s", comment: ""),
             portrait: "hp3",
             pages: Array(),
             genre: .Fantasy,
@@ -93,9 +95,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Harry Potter and the Goblet of Fire",
+            name: NSLocalizedString("hp4_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: "\"There will be three tasks, spaced throughout the school year, that will test the champions in many different ways: their magical abilities, their daring, their deductive skills, and, of course, their ability to navigate danger.\"\n The Triwizard Tournament is set to take place at Hogwarts. Only students aged seventeen and above can participate in this competition, but even so, Harry dreams of winning it. On Halloween, when the Goblet of Fire selects the champions, Harry is surprised to find that his name is one of those chosen by the magical goblet. During the tournament, he will have to face deadly challenges, dragons, and dark wizards, but with the help of Ron and Hermione, his best friends, he might just manage to come out alive!",
+            synopsis: NSLocalizedString("hp4_s", comment: ""),
             portrait: "hp4",
             pages: Array(),
             genre: .Fantasy,
@@ -105,9 +107,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Harry Potter and Order of the Phoenix",
+            name: NSLocalizedString("hp5_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: "\"The headmaster believes it's not advisable for that to continue happening. He wants me to teach you how to close your mind to the Dark Lord.\"\n These are dark times for Hogwarts. After the Dementors' attack on his cousin Dudley, Harry Potter realizes that Voldemort will stop at nothing to find him. Many deny that the Dark Lord has returned, but Harry is not alone: a secret order gathers at Grimmauld Place to fight against the dark forces. Harry must allow Professor Snape to teach him how to defend himself from Voldemort's brutal intrusions into his mind. But these are becoming increasingly powerful, and time is running out for Harry...",
+            synopsis: NSLocalizedString("hp5_s", comment: ""),
             portrait: "hp5",
             pages: Array(),
             genre: .Fantasy,
@@ -117,9 +119,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Harry Potter and the Half-Blood Prince",
+            name: NSLocalizedString("hp6_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: "\"At the age of sixteen, Harry begins the sixth year at Hogwarts amid terrible events plaguing England. Chosen as the captain of the Quidditch team, practices, exams, and girls occupy all his time, but the calm is short-lived.\"\n Despite the stringent security measures protecting the school, two students are brutally attacked. Dumbledore knows that the moment foretold by the prophecy is approaching, where Harry and Voldemort will face each other in a deadly duel: 'The one with the power to vanquish the Dark Lord approaches... One of them must die at the hands of the other, for neither can live while the other survives.'\n The elderly headmaster will seek Harry's help, and together they will undertake dangerous journeys to try to weaken the enemy. For this, the young wizard will rely on an old potions book belonging to a mysterious character, someone who calls themselves the Half-Blood Prince.",
+            synopsis: NSLocalizedString("hp6_s", comment: ""),
             portrait: "hp6",
             pages: Array(),
             genre: .Fantasy,
@@ -129,9 +131,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Harry Potter and the Deathly Hallows",
+            name: NSLocalizedString("hp7_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: "\"Hand over Harry Potter,\" said Voldemort's voice, \"and no one will be harmed. Hand over Harry Potter, and I will leave the school intact. Hand over Harry Potter, and you will be rewarded.\"\n As he rides in the sidecar of Hagrid's motorcycle and soars into the sky, leaving Privet Drive for the last time, Harry Potter knows that Lord Voldemort and his Death Eaters are close. The protective enchantment that had kept Harry safe has been broken, but he can no longer hide. The Dark Lord is dedicated to terrorizing all those Harry holds dear, and to stop him, Harry must find and destroy the remaining Horcruxes. The ultimate battle must begin: Harry will have to rise up and confront his enemy...",
+            synopsis: NSLocalizedString("hp7_s", comment: ""),
             portrait: "hp7",
             pages: Array(),
             genre: .Fantasy,
@@ -141,9 +143,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Tress of the Emerald Sea",
+            name: NSLocalizedString("bs_ts_t", comment: ""),
             author: "Brandon Sanderson",
-            synopsis: "In her native island over an emerald green ocean, the only life Braids knows is simple, marked by the pleasure of collecting mugs brought by sailors from distant lands and listening to the stories told by her friend Charlie. But when Charlie's father takes him on a ship to find him a wife and a disaster occurs, Braids must sneak aboard as a stowaway on a ship and set sail in search of the sorceress who dwells in the deadly Midnight Sea. Over oceans of spores teeming with pirates, can Braids leave her peaceful life behind and carve a place for herself in an ocean where a single drop can mean instant death?",
+            synopsis: NSLocalizedString("bs_ts_s", comment: ""),
             portrait: "bs_tes",
             pages: Array(),
             genre: .Fantasy,
@@ -153,9 +155,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "The Frugal Wizard's Handbook for Surviving Medieval England",
+            name: NSLocalizedString("bs_tfwh_t", comment: ""),
             author: "Brandon Sanderson",
-            synopsis: "A man awakens in a clearing in a forest that appears to be medieval England, with no memory of who he is, where he comes from, or why he is there. Pursued by a group from his own time, his only chance of survival lies in recovering his lost memory, gaining allies among the local people, and perhaps even relying on their superstitious beliefs. His only aid from the \"real world\" should have been a manual titled \"The Frugal Wizard's Guide to Surviving Medieval England,\" but the copy he had exploded in transit. The few fragments he managed to rescue provide clues about his situation, but will he be able to connect the dots in time to survive?",
+            synopsis: NSLocalizedString("bs_tfwh_s", comment: ""),
             portrait: "bs_tfwh",
             pages: Array(),
             genre: .Fantasy,
@@ -165,9 +167,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Yumi and the Nightmare Painter",
+            name: NSLocalizedString("bs_yn_t", comment: ""),
             author: "Brandon Sanderson",
-            synopsis: "Yumi comes from a land of gardens, meditation, and spirits, while Pintor lives in a world of darkness, technology, and nightmares. When suddenly their lives become strangely intertwined, can they set aside their differences and collaborate to uncover the mysteries of their situation and save their respective communities from certain disaster?",
+            synopsis: NSLocalizedString("bs_yn_s", comment: ""),
             portrait: "bs_yatnp",
             pages: Array(),
             genre: .Fantasy,
@@ -177,9 +179,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "The Sunlit Man",
+            name: NSLocalizedString("bs_sm_t", comment: ""),
             author: "Brandon Sanderson",
-            synopsis: "Years ago he had comrades in arms and a cause to believe in, but now the man who calls himself Nomad knows only a life on the run. Forced to hop from world to world in the C osmere whenever the relentless Night Brigade gets too close, Nomad lands on a new planet and is instantly caught up in the struggle between a tyrant and the rebels who want only to escape being turned into mindless slaves-all under the constant threat of a sunrise whose heat will melt the very stones. Unable to understand the language, can he navigate the conflict and gain enough power to leap offworld before his mind or body pay the ultimate price?",
+            synopsis: NSLocalizedString("bs_sm_s", comment: ""),
             portrait: "bs_sm",
             pages: Array(),
             genre: .Fantasy,
@@ -189,9 +191,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Alas de Fuego",
+            name: NSLocalizedString("lg_af_t", comment: ""),
             author: "Laura Gallego",
-            synopsis: "The young queen Marla is the sovereign of a radiant nation. Ahriel, a female angel, has been by her side since birth, with the mission to protect and guide her, and to maintain balance among the human realms. However, when Ahriel uncovers a conspiracy to initiate a bloody war, she is betrayed and imprisoned with her wings rendered useless in the horrifying Gorlian prison—a primitive and brutal world from which no one has ever escaped. Ahriel must not only learn to survive in Gorlian but also to see things from the human perspective... from ground level.",
+            synopsis: NSLocalizedString("lg_af_s", comment: ""),
             portrait: "lg_af",
             pages: Array(),
             genre: .Fantasy,
@@ -201,9 +203,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Alas Negras",
+            name: NSLocalizedString("lg_an_t", comment: ""),
             author: "Laura Gallego",
-            synopsis: "The female angel Ahriel has regained her freedom and achieved her revenge, but there is still something she must do. After going to account to her peers in the City of Clouds, she is set to resume the search for the magical prison of Gorlian to retrieve what she left behind when she escaped. She is determined to do whatever it takes to find it, even interrogate the only person who knows where it is hidden. Getting to her won't be easy, but Ahriel won't be alone this time...",
+            synopsis: NSLocalizedString("lg_an_s", comment: ""),
             portrait: "lg_an",
             pages: Array(),
             genre: .Fantasy,
@@ -213,9 +215,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "El Libro de los Portales",
+            name: NSLocalizedString("lg_elp_t", comment: ""),
             author: "Laura Gallego",
-            synopsis: "The painters of the Academy of Portals are the only ones who know how to draw the extraordinary travel portals that constitute Darusia's most important communication and transportation network. Their strict rules and thorough training ensure impeccable professionalism and technical perfection in all their work. When Tabit, a final-year student at the Academy, is tasked with painting a portal for a humble peasant, he does not imagine that he is about to become entangled in a plot of intrigues and secrets that could shake the very foundations of the institution.",
+            synopsis: NSLocalizedString("lg_elp_s", comment: ""),
             portrait: "lg_eldlp",
             pages: Array(),
             genre: .Fantasy,
@@ -225,9 +227,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "The Physician",
+            name: NSLocalizedString("ng_tp_t", comment: ""),
             author: "Noah Gordon",
-            synopsis: "England, 11th century. At the age of nine, after the death of his mother and the loss of his home, Rob J. Cole realizes he has an extraordinary gift: by touching a person, he can determine whether they are near death or not. Under the guidance of Henry Croft, a barber surgeon who travels the country practicing as a healer, his gift grows, along with his passion for medicine.After his mentor's death, Rob continues the business, but an encounter with Benjamin Merlin, a Jewish physician who speaks to him about the eminent doctor from distant Persia, Ibn Sina or Avicenna, inspires him to pursue his dream. Driven by his passion for healing and determined to overcome any obstacle, Rob will travel to the East, posing as a Jew and immersing himself in new languages, ready to study medicine at the madrasa of Isfahan. There, he will shape his destiny and that of his family forever.",
+            synopsis: NSLocalizedString("ng_tp_s", comment: ""),
             portrait: "ng_tp",
             pages: Array(),
             genre: .Historical_Fiction,
@@ -237,9 +239,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "Fourth Wing",
+            name: NSLocalizedString("ry_fw_t", comment: ""),
             author: "Rebecca Yarros",
-            synopsis: "Violet Sorrengail believed she would join the Scribe Quadrant to live a peaceful life. However, by her mother's orders, she must join the thousands of candidates at the Basgiath War College who vie for a spot in Navarre's elite: the Dragon Rider Quadrant. Being smaller and frailer than the others puts her life in danger because dragons don't bond with weak humans. Additionally, with more riders than dragons available, many would kill her to improve their chances of success. There are others, like the ruthless Xaden Riorson, the most powerful wing leader in the Dragon Rider Quadrant, who would murder her simply for being the daughter of the general commander. To survive, she'll need to make the most of her wit. As the war becomes deadlier, Violet suspects that Navarre's leaders are hiding a terrible secret...",
+            synopsis: NSLocalizedString("ry_fw_s", comment: ""),
             portrait: "ry_fw",
             pages: Array(),
             genre: .Fantasy,
@@ -249,9 +251,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "The Fault In Our Stars",
+            name: NSLocalizedString("jg_tfs_t", comment: ""),
             author: "John Green",
-            synopsis: "Emotional, ironic, and sharp. A novel tinted with humor and tragedy that speaks to our ability to dream even in the most challenging circumstances. Hazel and Gus would like to have more ordinary lives. Some would say they weren't born under a lucky star, that their world is unfair. Hazel and Gus are just teenagers, but if cancer has taught them anything, it's that there's no time for regrets because, like it or not, there is only today and now. And so, with the intention of fulfilling Hazel's greatest wish—to meet her favorite author—they will cross the Atlantic together to live a race against time, as cathartic as it is heartbreaking. Destination: Amsterdam, the place where the enigmatic and grumpy writer resides, the only person who might help them put together the pieces of the enormous puzzle they are a part of.",
+            synopsis: NSLocalizedString("jg_tfs_s", comment: ""),
             portrait: "jg_tfios",
             pages: Array(),
             genre: .Romance,
@@ -261,9 +263,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "The Sherlock Holmes: El Sabueso de los Baskerville",
+            name: NSLocalizedString("sh_sb_t", comment: ""),
             author: "Arthur Conan Doyle",
-            synopsis: "1889, Devonshire, northwest England. Sir Charles Baskerville's corpse is discovered on a path near his house. When Sherlock Holmes is called in to solve the mystery, he observes that what seemed like a simple crime hides a curse that dates back centuries: since the ancestor of Sir Charles, Hugo de Baskerville, was killed by a giant hound, the death of his descendants has been preceded by the appearance of a demonic dog. Indeed, the tracks of an enormous creature appear next to Sir Charles's body. What lies behind the legend of the Baskervilles?",
+            synopsis: NSLocalizedString("sh_sb_s", comment: ""),
             portrait: "acd_sh_sb",
             pages: Array(),
             genre: .Mystery,
@@ -273,9 +275,9 @@ final class BookSourceData{
         allBooks.append(b)
         
         b = Book(
-            name: "The Sherlock Holmes: Estudio en Escarlata",
+            name: NSLocalizedString("sh_es_t", comment: ""),
             author: "Arthur Conan Doyle",
-            synopsis: "Retired military surgeon John Watson returns to London in search of a quiet place to enjoy his retirement. However, his journey leads him to 221B Baker Street, where he meets Sherlock Holmes, an eccentric character who will become the most famous detective of all time. With Holmes, Watson becomes entangled in the investigation of a mysterious murder. The corpse of a man has appeared in an empty house. Although the body shows no apparent wounds, an enigmatic message can be read on the wall of the room next to it: \"Rache.\"",
+            synopsis: NSLocalizedString("sh_es_s", comment: ""),
             portrait: "acd_sh_es",
             pages: Array(),
             genre: .Mystery,
@@ -319,9 +321,9 @@ final class BoughtBooks{
     var boughtBooks = Array<Book>()
     
     init(){
-        boughtBooks.append(BookSourceData.instance.findBookByName("Harry Potter and the Sorcerer's Stone") ?? Book())
+        boughtBooks.append(BookSourceData.instance.findBookByName(NSLocalizedString("hp1_t", comment: "")) ?? Book())
         
-        boughtBooks.append(BookSourceData.instance.findBookByName("Harry Potter and the Chamber of Secrets") ?? Book())
+        boughtBooks.append(BookSourceData.instance.findBookByName(NSLocalizedString("hp2_t", comment: "")) ?? Book())
     }
     
     func addBook(newBook : Book){

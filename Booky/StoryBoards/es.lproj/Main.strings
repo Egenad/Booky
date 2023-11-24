@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "1w1-RY-zwI"; */
+"1w1-RY-zwI.text" = "Título";
+
+/* Class = "UITabBarItem"; title = "Store"; ObjectID = "3FO-7C-hFt"; */
+"3FO-7C-hFt.title" = "Tienda";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "5VH-RH-WJK"; */
+"5VH-RH-WJK.title" = " ";
+
+/* Class = "UIButton"; configuration.title = "Buy"; ObjectID = "Xdn-2S-hIs"; */
+"Xdn-2S-hIs.configuration.title" = "Comprar";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xdn-2S-hIs"; */
+"Xdn-2S-hIs.normalTitle" = "Boton";
+
+/* Class = "UILabel"; text = "Product Details"; ObjectID = "Ypv-2v-5EF"; */
+"Ypv-2v-5EF.text" = "Detalles del producto";
+
+/* Class = "UILabel"; text = "Author"; ObjectID = "adV-xG-0dn"; */
+"adV-xG-0dn.text" = "Autor";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bYr-8S-dnf"; */
+"bYr-8S-dnf.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Library"; ObjectID = "ffz-9O-dhH"; */
+"ffz-9O-dhH.title" = "Biblioteca";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "jl6-bZ-A0x"; */
+"jl6-bZ-A0x.text" = "Título";
+
+/* Class = "UILabel"; text = "Author"; ObjectID = "mGJ-ki-APh"; */
+"mGJ-ki-APh.text" = "Autor";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "n4H-GE-52f"; */
+"n4H-GE-52f.text" = "Título";
+
+/* Class = "UILabel"; text = "1 of 256"; ObjectID = "reQ-eH-cGR"; */
+"reQ-eH-cGR.text" = "1 of 256";
+
+/* Class = "UITabBarItem"; title = "Library"; ObjectID = "vV4-GO-apF"; */
+"vV4-GO-apF.title" = "Biblioteca";
+
+/* Class = "UINavigationItem"; title = "Store"; ObjectID = "yed-iS-TpY"; */
+"yed-iS-TpY.title" = "Tienda";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "zSo-xz-Wns"; */
+"zSo-xz-Wns.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";

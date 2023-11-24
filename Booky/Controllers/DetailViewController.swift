@@ -21,16 +21,15 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var sinopsis: UITextView!
     
-    @IBOutlet weak var mainStack: UIStackView!
-    
     var book : Book? = nil
     
     var boughtBooks = BoughtBooks.instance
+    var allBooks = BookSourceData.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        /*if(book != nil){
+        if(book != nil){
             portrait.image = UIImage(named: book?.portrait ?? "hp1")
             bookAuthor.text = book?.author
             bookTitle.text = book?.name
@@ -38,14 +37,13 @@ class DetailViewController: UIViewController {
             
             if boughtBooks.findBookByName(book?.name ?? "") != nil{
                 buyButton.isEnabled = false
-                buyButton.setTitle("Bought", for: UIControl.State.disabled)
+                buyButton.setTitle(NSLocalizedString("bought", comment: ""), for: UIControl.State.disabled)
             }
             
             buyButton.tintColor = UIColor.black
             
             sinopsis.text = book?.synopsis
         }
-        */
         if let navigationController = self.navigationController {
             navigationController.navigationBar.tintColor = UIColor.black
             
@@ -64,28 +62,20 @@ class DetailViewController: UIViewController {
             }
         }
     }
-    
-    override func viewWillLayoutSubviews() {
-        if view.bounds.size.width >= view.bounds.size.height {
-            self.mainStack.axis = .horizontal
-        }
-        else {
-            self.mainStack.axis = .vertical
-        }
-    }
-
-    
 
     @IBAction func buyBook(_ sender: Any) {
+        if(book != nil){
+            if let b = allBooks.findBookByName(book?.name ?? ""){
+                boughtBooks.addBook(newBook: b)
+                buyButton.isEnabled = false
+                buyButton.setTitle(NSLocalizedString("bought", comment: ""), for: UIControl.State.disabled)
+                
+                let alertController = UIAlertController(title: NSLocalizedString("purchase_t", comment: ""), message: "\(NSLocalizedString("purchase_c", comment: "")) \"\(String(describing: book?.name ?? ""))\"!", preferredStyle: .alert)
+                
+                let action = UIAlertAction(title: NSLocalizedString("continue", comment: ""), style: .default) { _ in}
+                alertController.addAction(action)
+                present(alertController, animated: true, completion: nil)
+            }
+        }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

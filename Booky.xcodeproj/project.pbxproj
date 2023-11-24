@@ -23,6 +23,7 @@
 		CB6E43482B02C68C00334528 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E43472B02C68C00334528 /* CollectionViewController.swift */; };
 		CB6E434A2B02CB2700334528 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E43492B02CB2700334528 /* ListController.swift */; };
 		CB6E434C2B02CB7900334528 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6E434B2B02CB7900334528 /* Throttler.swift */; };
+		CB93D9D52B0F7F80006D7652 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB93D9D72B0F7F80006D7652 /* Localizable.strings */; };
 		CBDC62032B03EFB3004C4896 /* BookResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC62022B03EFB3004C4896 /* BookResources.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,10 @@
 		CB6E43472B02C68C00334528 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		CB6E43492B02CB2700334528 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		CB6E434B2B02CB7900334528 /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+		CB93D9CE2B0F7C68006D7652 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		CB93D9CF2B0F7C68006D7652 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CB93D9D62B0F7F80006D7652 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB93D9D82B0F7F8D006D7652 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CBDC62022B03EFB3004C4896 /* BookResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +67,7 @@
 		CB1AE7DB2B0D387200083B80 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB93D9D22B0F7DC6006D7652 /* Cells */,
 				CB6E43432B02C5A700334528 /* MainController.swift */,
 				CB6E43412B02BA6500334528 /* PresentationController.swift */,
 				CB3A1CD62B05105B00BEA4F9 /* PresentationContentController.swift */,
@@ -104,16 +110,40 @@
 			children = (
 				CB3A1CD32B04BCB300BEA4F9 /* Utils */,
 				CB1AE7DB2B0D387200083B80 /* Controllers */,
+				CB93D9D02B0F7DA5006D7652 /* Delegates */,
+				CB93D9D12B0F7DB5006D7652 /* StoryBoards */,
+				CB6E43362B02B65100334528 /* Assets.xcassets */,
+				CB6E433B2B02B65100334528 /* Info.plist */,
+				CB93D9D72B0F7F80006D7652 /* Localizable.strings */,
+			);
+			path = Booky;
+			sourceTree = "<group>";
+		};
+		CB93D9D02B0F7DA5006D7652 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
 				CB6E432F2B02B64F00334528 /* SceneDelegate.swift */,
 				CB6E432D2B02B64F00334528 /* AppDelegate.swift */,
-				CB6E43332B02B64F00334528 /* Main.storyboard */,
-				CB6E43362B02B65100334528 /* Assets.xcassets */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		CB93D9D12B0F7DB5006D7652 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
 				CB6E43382B02B65100334528 /* LaunchScreen.storyboard */,
-				CB6E433B2B02B65100334528 /* Info.plist */,
+				CB6E43332B02B64F00334528 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CB93D9D22B0F7DC6006D7652 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				CB3A1CD12B04BC9C00BEA4F9 /* TableViewCell.swift */,
 				CB1AE7D72B08B84A00083B80 /* CollectionViewCell.swift */,
 			);
-			path = Booky;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +188,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = CB6E43212B02B64F00334528;
 			productRefGroup = CB6E432B2B02B64F00334528 /* Products */;
@@ -175,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6E433A2B02B65100334528 /* LaunchScreen.storyboard in Resources */,
+				CB93D9D52B0F7F80006D7652 /* Localizable.strings in Resources */,
 				CB6E43372B02B65100334528 /* Assets.xcassets in Resources */,
 				CB6E43352B02B64F00334528 /* Main.storyboard in Resources */,
 			);
@@ -211,6 +243,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB6E43342B02B64F00334528 /* Base */,
+				CB93D9CE2B0F7C68006D7652 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -219,8 +252,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB6E43392B02B65100334528 /* Base */,
+				CB93D9CF2B0F7C68006D7652 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB93D9D72B0F7F80006D7652 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB93D9D62B0F7F80006D7652 /* en */,
+				CB93D9D82B0F7F8D006D7652 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -231,6 +274,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -294,6 +338,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

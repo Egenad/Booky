@@ -35,7 +35,7 @@ class ListController: UITableViewController, UISearchResultsUpdating {
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search book name"
+        searchController.searchBar.placeholder = NSLocalizedString("search", comment: "")
         self.navigationItem.searchController = searchController
         table.dataSource = self
         
@@ -50,11 +50,16 @@ class ListController: UITableViewController, UISearchResultsUpdating {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        let searchText = searchController.searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if(searchText.isEmpty){
+            lastSearch = "init"
+            searchResults(word: "")
+        }
         updateColors()
     }
     
     private func updateColors(){
+        
         if let tabBarController = self.tabBarController {
             tabBarController.tabBar.barTintColor = UIColor.black
             
