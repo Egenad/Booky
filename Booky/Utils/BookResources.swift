@@ -59,7 +59,7 @@ final class BookSourceData{
         var b = Book(
             name: NSLocalizedString("hp1_t", comment: ""),
             author: "J. K. Rowling",
-            synopsis: NSLocalizedString("hp1_2", comment: ""),
+            synopsis: NSLocalizedString("hp1_s", comment: ""),
             portrait: "hp1",
             pages: b_pages,
             genre: .Fantasy,
