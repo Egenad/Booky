@@ -87,7 +87,7 @@ final class BookSourceData{
             author: "J. K. Rowling",
             synopsis: NSLocalizedString("hp3_s", comment: ""),
             portrait: "hp3",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .fiveStar
         )
@@ -99,7 +99,7 @@ final class BookSourceData{
             author: "J. K. Rowling",
             synopsis: NSLocalizedString("hp4_s", comment: ""),
             portrait: "hp4",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .fourStar
         )
@@ -111,7 +111,7 @@ final class BookSourceData{
             author: "J. K. Rowling",
             synopsis: NSLocalizedString("hp5_s", comment: ""),
             portrait: "hp5",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .threeStar
         )
@@ -123,7 +123,7 @@ final class BookSourceData{
             author: "J. K. Rowling",
             synopsis: NSLocalizedString("hp6_s", comment: ""),
             portrait: "hp6",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .threeStar
         )
@@ -135,7 +135,7 @@ final class BookSourceData{
             author: "J. K. Rowling",
             synopsis: NSLocalizedString("hp7_s", comment: ""),
             portrait: "hp7",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .fiveStar
         )
@@ -147,7 +147,7 @@ final class BookSourceData{
             author: "Brandon Sanderson",
             synopsis: NSLocalizedString("bs_ts_s", comment: ""),
             portrait: "bs_tes",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .oneStar
         )
@@ -159,7 +159,7 @@ final class BookSourceData{
             author: "Brandon Sanderson",
             synopsis: NSLocalizedString("bs_tfwh_s", comment: ""),
             portrait: "bs_tfwh",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .threeStar
         )
@@ -171,7 +171,7 @@ final class BookSourceData{
             author: "Brandon Sanderson",
             synopsis: NSLocalizedString("bs_yn_s", comment: ""),
             portrait: "bs_yatnp",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .fourStar
         )
@@ -183,7 +183,7 @@ final class BookSourceData{
             author: "Brandon Sanderson",
             synopsis: NSLocalizedString("bs_sm_s", comment: ""),
             portrait: "bs_sm",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .twoStar
         )
@@ -195,7 +195,7 @@ final class BookSourceData{
             author: "Laura Gallego",
             synopsis: NSLocalizedString("lg_af_s", comment: ""),
             portrait: "lg_af",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .threeStar
         )
@@ -207,7 +207,7 @@ final class BookSourceData{
             author: "Laura Gallego",
             synopsis: NSLocalizedString("lg_an_s", comment: ""),
             portrait: "lg_an",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .fourStar
         )
@@ -219,7 +219,7 @@ final class BookSourceData{
             author: "Laura Gallego",
             synopsis: NSLocalizedString("lg_elp_s", comment: ""),
             portrait: "lg_eldlp",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .threeStar
         )
@@ -231,7 +231,7 @@ final class BookSourceData{
             author: "Noah Gordon",
             synopsis: NSLocalizedString("ng_tp_s", comment: ""),
             portrait: "ng_tp",
-            pages: Array(),
+            pages: b_pages,
             genre: .Historical_Fiction,
             stars: .fiveStar
         )
@@ -243,7 +243,7 @@ final class BookSourceData{
             author: "Rebecca Yarros",
             synopsis: NSLocalizedString("ry_fw_s", comment: ""),
             portrait: "ry_fw",
-            pages: Array(),
+            pages: b_pages,
             genre: .Fantasy,
             stars: .threeStar
         )
@@ -255,7 +255,7 @@ final class BookSourceData{
             author: "John Green",
             synopsis: NSLocalizedString("jg_tfs_s", comment: ""),
             portrait: "jg_tfios",
-            pages: Array(),
+            pages: b_pages,
             genre: .Romance,
             stars: .fiveStar
         )
@@ -267,7 +267,7 @@ final class BookSourceData{
             author: "Arthur Conan Doyle",
             synopsis: NSLocalizedString("sh_sb_s", comment: ""),
             portrait: "acd_sh_sb",
-            pages: Array(),
+            pages: b_pages,
             genre: .Mystery,
             stars: .fourStar
         )
@@ -279,7 +279,7 @@ final class BookSourceData{
             author: "Arthur Conan Doyle",
             synopsis: NSLocalizedString("sh_es_s", comment: ""),
             portrait: "acd_sh_es",
-            pages: Array(),
+            pages: b_pages,
             genre: .Mystery,
             stars: .threeStar
         )
